@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-jobseeker-profile',
@@ -9,6 +10,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './jobseeker-profile.component.css'
 })
 export class JobseekerProfileComponent {
+
+  constructor(private router:Router){}
   jobRole = '';
   experience = '';
   keySkills: string[] = [];
@@ -43,6 +46,11 @@ export class JobseekerProfileComponent {
       speakingInterests: this.speakingInterests
     };
     console.log('Profile saved:', profile);
+  }
+  navigateToCareerPath(){
+    {
+  this.router.navigate(['/career-path'])
+    }
   }
 }
 

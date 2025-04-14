@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   selector: 'app-signup',
   imports: [CommonModule],
   templateUrl: './signup.component.html',
-  styleUrl: './signup.component.css'
+  styleUrls: ['./signup.component.css']
 })
 export class SignupComponent {
 constructor(private router:Router){}
@@ -15,4 +15,8 @@ navigateToLogin(){
 this.router.navigate(['/login'])
   },1000)
 }
+navigateToJobApplication(){
+this.router.navigate(['/application-form'])
+} 
+
 }

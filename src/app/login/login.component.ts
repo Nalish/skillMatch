@@ -16,9 +16,10 @@ navigateToSignup(){
 this.router.navigate(['/signup'])
   },1000)
 }
+
 navigateToJobSeekerProfile(){
-  setTimeout(()=>{
-this.router.navigate(['/view-candidate'])
-  },1000)
+  {
+this.router.navigate(['/jobseeker-profile'])
+  }
 }
 }

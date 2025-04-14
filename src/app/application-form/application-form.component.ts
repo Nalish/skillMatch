@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-application-form',
@@ -10,9 +11,10 @@ import { CommonModule } from '@angular/common';
   styleUrl:'./application-form.component.css'
 })
 export class ApplicationFormComponent implements OnInit {
+
   seekerForm!: FormGroup;
 
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder,private router:Router) {}
 
   ngOnInit(): void {
     this.seekerForm = this.fb.group({
@@ -46,6 +48,11 @@ export class ApplicationFormComponent implements OnInit {
       console.log('✅ Form Submitted:', this.seekerForm.value);
     } else {
       console.log('❌ Form Invalid');
+    }
+  }
+  navigateToJobSeekerProfile(){
+    {
+  this.router.navigate(['/jobseeker-profile'])
     }
   }
 }

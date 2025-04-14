@@ -1,3 +1,5 @@
+
+
 <div class="navbar">
   <div class="logo">JOBQuest</div>
   <div class="profile-status">
@@ -5,7 +7,45 @@
     <div class="status-dot"></div>
   </div>
 </div>
+<div class="jobseeker">
+<div class="sidebar">
+  <ul class="nav-list">
+    <li class="nav-item active">
+      <i class="icon">👜</i>
+      <span>Dashboard</span>
+    </li>
+    <li class="nav-item">
+      <i class="icon">🛣️</i>
+      <span>Career Path</span>
+      <span class="arrow">›</span>
+    </li>
+    <li class="nav-item">
+      <i class="icon">🧠</i>
+      <span>Chat box</span>
+      <span class="arrow">›</span>
+    </li>
+    <li class="nav-item">
+      <i class="icon">🔔</i>
+      <span>Notifications</span>
+      <span class="arrow">›</span>
+    </li>
+  </ul>
 
+  <hr class="divider" />
+
+  <ul class="nav-list bottom">
+    <li class="nav-item">
+      <i class="icon">⚙️</i>
+      <span>Settings</span>
+      <span class="arrow">›</span>
+    </li>
+    <li class="nav-item">
+      <i class="icon">🔓</i>
+      <span>Sign Out</span>
+      <span class="arrow">›</span>
+    </li>
+  </ul>
+</div>
 <form [formGroup]="seekerForm" (ngSubmit)="onSubmit()" class="form-container">
   <h1>Seeker application form</h1>
   <p class="welcome-text">Welcome to <span class="highlight">JobQuest</span></p>
@@ -65,5 +105,6 @@
     <img src="../../../public/profile-JobQuest.jpeg" alt="User" />
   </div>
 
-  <button class="continue-btn" type="submit">Continue →</button>
+  <button class="continue-btn" type="submit" (click)="navigateToJobSeekerProfile()">Continue →</button>
 </form>
+</div>
