@@ -1,0 +1,78 @@
+<div class="navbar">
+    <div class="logo">JOBQuest</div>
+    <div class="profile-status">
+      <div class="profile-pic"></div>
+      <div class="status-dot"></div>
+    </div>
+  </div>
+<div class="admin-dashboard">
+    <aside class="sidebar">
+      <h2>JOBQuest</h2>
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Compliance</li>
+          <li>Chat Box</li>
+        </ul>
+      </nav>
+      <div class="settings">
+        <p>Settings</p>
+        <p>Sign Out</p>
+      </div>
+    </aside>
+  
+    <main class="main-panel">
+      <!-- Stats Section -->
+      <section class="stats">
+        <div class="stat-card" *ngFor="let stat of stats">
+          <h3>{{ stat.value }}</h3>
+          <p>{{ stat.label }}</p>
+        </div>
+      </section>
+  
+      <!-- Charts (Placeholder) -->
+      <section class="charts">
+        <div class="chart-box">User Registration Trends<br><small>[Chart Placeholder]</small></div>
+        <div class="chart-box">Hiring Metrics<br><small>[Chart Placeholder]</small></div>
+      </section>
+  
+      <!-- Manage Users & Jobs -->
+      <section class="management">
+        <div class="user-management">
+          <h3>Manage Users</h3>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Role</th>
+              <th>Actions</th>
+            </tr>
+            <tr *ngFor="let user of users">
+              <td>{{ user.name }}</td>
+              <td>{{ user.role }}</td>
+              <td>
+                <button class="edit-btn">Edit</button>
+                <button class="del-btn">Del</button>
+              </td>
+            </tr>
+          </table>
+        </div>
+  
+        <div class="job-management">
+          <h3>Manage Jobs</h3>
+          <table>
+            <tr>
+              <th>Job Title</th>
+              <th>Company</th>
+              <th>Status</th>
+            </tr>
+            <tr *ngFor="let job of jobs">
+              <td>{{ job.title }}</td>
+              <td>{{ job.company }}</td>
+              <td [ngClass]="job.status.toLowerCase()">{{ job.status }}</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+  

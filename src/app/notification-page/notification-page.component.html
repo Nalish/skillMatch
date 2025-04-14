@@ -1,0 +1,33 @@
+<!-- dashboard component -->
+
+    <!-- Sidebar -->
+    
+ <!-- navbar -->
+<div class="navbar">
+    <div class="logo">JOBQuest</div>
+    <div class="profile-status">
+      <div class="profile-pic"></div>
+      <div class="status-dot"></div>
+    </div>
+  </div><div class="notifications-container">
+    <h2>Notifications</h2>
+    <p>You've got {{ notifications.length }} updates</p>
+  
+    <div class="tabs">
+      <span class="tab active">All</span>
+      <span class="tab">Unread</span>
+      <span class="tab">Recruiter</span>
+    </div>
+  
+    <div class="notification-list">
+      <div class="notification" *ngFor="let notif of notifications">
+        <img [src]="notif.logo" alt="logo" class="logo" />
+        <div class="content">
+          <p class="title">{{ notif.title }}</p>
+          <span class="time">{{ notif.timeAgo }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

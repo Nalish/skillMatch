@@ -1,0 +1,32 @@
+<div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo">JOBQuest</div>
+      <nav class="nav">
+        <a class="nav-item active">Dashboard</a>
+        <a class="nav-item">Career Path</a>
+        <a class="nav-item">Chat box</a>
+        <a class="nav-item">Notifications</a>
+      </nav>
+      <div class="bottom">
+        <a class="nav-item">Settings</a>
+        <a class="nav-item">Sign Out</a>
+      </div>
+    </aside>
+  
+    <!-- Main Content -->
+    <main class="main">
+      <header class="topbar">
+        <input type="text" class="search" placeholder="Search" />
+        <div class="avatar">
+          <span class="status-dot"></span>
+        </div>
+      </header>
+  
+      <!-- Content slot -->
+      <section class="content">
+        <ng-content></ng-content>
+      </section>
+    </main>
+  </div>
+  

@@ -1,0 +1,153 @@
+.container {
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header {
+    background-color: purple;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+  }
+
+  .content {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .left-panel, .right-panel {
+    padding: 20px;
+  }
+
+  .left-panel {
+    width: 300px;
+    border-right: 1px solid #ddd;
+  }
+
+  .interview-stage, .calendar, .time-range {
+    margin-bottom: 20px;
+  }
+
+  .interview-stage label, .calendar label, .time-range label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .interview-stage select, .time-range select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+
+  .calendar-header button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+  }
+
+  .day {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .day.selected {
+    background-color: purple;
+    color: white;
+  }
+
+  .time-range {
+    display: flex;
+    gap: 10px;
+  }
+
+  .time-input {
+    flex-grow: 1;
+  }
+
+  .find-available-time {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .right-panel h1 {
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+  }
+
+  .slots h2 {
+    margin-bottom: 10px;
+  }
+
+  .slot {
+    margin-bottom: 10px;
+  }
+
+  .slot label {
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .confirm-selected-slots {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+  }

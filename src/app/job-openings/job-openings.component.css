@@ -1,0 +1,232 @@
+.container {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .tabs {
+    display: flex;
+  }
+
+  .tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tab.active {
+    border-bottom-color: purple;
+    font-weight: bold;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+  }
+
+  .new-job-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .welcome-back {
+    margin-right: 10px;
+  }
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex: 1;
+  }
+
+  .left-panel, .right-panel {
+    padding: 20px;
+    overflow-y: auto;
+  }
+
+  .left-panel {
+    flex: 2;
+    border-right: 1px solid #ddd;
+  }
+
+  .right-panel {
+    flex: 1;
+  }
+
+  .filters {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .filter {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .filter.active {
+    background-color: purple;
+    color: white;
+    border-color: purple;
+  }
+
+  .job-details h2 {
+    margin-bottom: 10px;
+  }
+
+  .job-actions {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .job-actions button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .job-actions button:first-child {
+    background-color: purple;
+    color: white;
+    border-color: purple;
+  }
+
+  .about-us, .job-summary, .required-qualifications, .posted-date, .job-status, .apply-link {
+    margin-bottom: 20px;
+  }
+
+  .required-qualifications ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .required-qualifications li {
+    margin-bottom: 5px;
+  }
+
+  .candidate-tabs {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .candidate-tab {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+  }
+
+  .candidate-tab.active {
+    border-bottom-color: purple;
+    font-weight: bold;
+  }
+
+  .candidate-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .candidate-stats button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .candidate-list {
+    margin-bottom: 20px;
+  }
+
+  .candidate {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .candidate-image {
+    width: 40px;
+    height: 40px;
+    background-color: lightgray;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .rate-candidate {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pagination button {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .pagination .ai-auto-rating {
+    background-color: purple;
+    color: white;
+    border-color: purple;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+
+  .rocket-launch {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

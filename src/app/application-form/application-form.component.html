@@ -1,0 +1,69 @@
+<div class="navbar">
+  <div class="logo">JOBQuest</div>
+  <div class="profile-status">
+    <div class="profile-pic"></div>
+    <div class="status-dot"></div>
+  </div>
+</div>
+
+<form [formGroup]="seekerForm" (ngSubmit)="onSubmit()" class="form-container">
+  <h1>Seeker application form</h1>
+  <p class="welcome-text">Welcome to <span class="highlight">JobQuest</span></p>
+
+  <div class="input-row">
+    <div>
+      <label for="firstName">First Name</label>
+      <input type="text" placeholder="Your name" formControlName="firstName" />
+    </div>
+    <div [ngStyle]="{'margin-left': '20px'}">
+      <label for="lastName">Last Name</label>
+      <input type="text" placeholder="Your last name" formControlName="lastName" />
+    </div>
+  </div>
+
+  <label for="email">Email Address</label>
+  <input type="email" placeholder="yourmail@gmail.com" formControlName="email" />
+
+  <label for="password">Password</label>
+  <input type="password" placeholder="Password" formControlName="password"  [ngStyle]="{'margin-bottom': '10px'}"/>
+
+  <div class="input-row">
+    <select formControlName="country">
+      <option value="" disabled>Select Country</option>
+      <option value="kenya" selected>Kenya</option>
+      <option value="uganda">Uganda</option>
+      <option value="tanzania">Tanzania</option>
+      <option value="rwanda">Rwanda</option>
+      <option value="burundi">Burundi</option>
+      <option value="south-sudan">South Sudan</option>
+      <option value="ethiopia">Ethiopia</option>
+      <option value="somalia">Somalia</option>
+      <option value="djibouti">Djibouti</option>
+      <option value="eritrea">Eritrea</option>
+    </select>
+  </div>
+
+  <input type="date" formControlName="birthday" [ngStyle]="{'margin-bottom': '10px'}"/>
+
+  <div formGroupName="education" class="input-row">
+    <input type="text" placeholder="Name of school" formControlName="school" />
+    <input type="text" placeholder="Job Field" formControlName="level" />
+  </div>
+
+  <div class="upload-section">
+    <div class="upload-row">
+      <span>Portfolio</span>
+      <input type="file" (change)="onFileChange($event, 'portfolio')" />
+    </div>
+    <div class="upload-row">
+      <span>Curriculum Vitae</span>
+      <input type="file" (change)="onFileChange($event, 'cv')" />
+    </div>
+  </div>
+
+  <div class="profile-image">
+    <img src="../../../public/profile-JobQuest.jpeg" alt="User" />
+  </div>
+
+  <button class="continue-btn" type="submit">Continue →</button>
+</form>

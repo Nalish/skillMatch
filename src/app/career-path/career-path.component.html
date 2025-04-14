@@ -1,0 +1,65 @@
+<div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="logo">JOBQuest</div>
+      <input class="search-bar" placeholder="Search..." />
+      <nav>
+        <ul>
+          <li class="active">Dashboard</li>
+          <li>Career Path</li>
+          <li>Chat Box</li>
+          <li>Notifications</li>
+        </ul>
+      </nav>
+      <div class="settings">
+        <p>Settings</p>
+        <p>Sign Out</p>
+      </div>
+    </aside>
+  
+    <main class="main-content">
+      <section class="job-section">
+        <h2>Newest Found Jobs For You</h2>
+        <p>Get the fastest application so your name is above other applicants</p>
+  
+        <div class="filters">
+          <button>Fulltime</button>
+          <button>Remote</button>
+          <button>$200K</button>
+          <button>Contract</button>
+        </div>
+  
+        <div class="jobs-grid">
+          <div class="job-card" *ngFor="let job of [1,2,3,4,5,6]">
+            <h3>UX Designer</h3>
+            <p>Adhoc Digital Agency</p>
+            <div class="tags">
+              <span>Full-time</span>
+              <span>Remote</span>
+              <span>$200K</span>
+            </div>
+            <button class="apply-btn">Apply</button>
+            <p class="applied">34 Applied</p>
+          </div>
+        </div>
+      </section>
+  
+      <section class="career-paths">
+        <h2>Explore Career Paths</h2>
+  
+        <h3>Based on Your Skills</h3>
+        <div class="cards">
+          <div class="career-card" *ngFor="let path of ['Data Scientist', 'ML Engineer', 'AI Product Manager', 'Full Stack Engineer', 'AI Researcher']">
+            {{ path }}
+          </div>
+        </div>
+  
+        <h3>Trending Paths</h3>
+        <div class="cards">
+          <div class="career-card" *ngFor="let trending of ['AI Ethics Specialist', 'Prompt Engineer', 'Robotics Engineer', 'AI Engineer', 'AI Policy Advisor']">
+            {{ trending }}
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  

@@ -1,0 +1,33 @@
+<div class="login-container">
+    <div class="login-card">
+      <h2 class="login-title">Signup</h2>
+      <p class="login-subtitle">Just some details to get you in.!</p>
+  
+      <input type="text" placeholder="Username" class="input-field" />
+      <input type="email" placeholder="Email" class="input-field" />
+      <input type="password" placeholder="Password" class="input-field" />
+      <input type="password" placeholder="Confirm Password" class="input-field" />
+  
+      <button class="login-btn">Signup</button>
+  
+      <div class="user-type-toggle">
+        <button class="active">Job Seeker</button>
+        <button>Employer</button>
+      </div>
+  
+      <div class="footer-text">
+        <p>Already Registered? <a  (click)="navigateToLogin()" [ngStyle]="{'cursor': 'pointer'}">Login</a></p>
+        <div class="footer-links">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Support</a>
+          <a href="#">Customer Care</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="welcome-section">
+      <h1>Welcome.!</h1>
+      <hr class="welcome-underline" />
+    </div>
+  </div>
+  

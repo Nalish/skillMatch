@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+
+  .sidebar {
+    background-color: purple;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .profile-icon {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    align-self: flex-end;
+    margin-bottom: 30px;
+  }
+
+  .menu {
+    flex-grow: 1;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  .menu-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    margin-right: 10px;
+  }
+
+  .arrow-icon {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    margin-left: auto;
+  }
+
+  .footer {
+    margin-top: auto;
+  }
+
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .back-button {
+    width: 30px;
+    height: 30px;
+    background-color: lightgray;
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input, .form-group textarea, .form-group select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+  }
+
+  .add-button {
+    background-color: purple;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }

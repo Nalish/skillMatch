@@ -1,0 +1,114 @@
+body {
+    margin: 0;
+    font-family: 'poppins';
+    background: linear-gradient(to top, #530061, #000);
+    color: #fff;
+     height: 100vh; 
+    width: 100vw;
+  }
+
+  
+  .container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .left {
+    width: 50%;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right {
+    margin-top:40px;
+    width: 50%;
+    height: 70vh;
+    background-image: url(../../../public/jobQuest\ img-home.jpg); /* Make sure path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    display: flex;
+    border-radius: 20px;
+    margin:10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #530061;
+  }
+  
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  nav {
+    border-radius: 20px;
+    background-color: #530061;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .login-btn {
+    background-color: #1e90ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+  }
+  .signup-btn {
+    background-color: #1e90ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  .hero-text h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .hero-text p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #ccc;
+  }
+  
+  .trending {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .badge {
+    background-color: #222;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #444;
+    font-size: 14px;
+  }
+  

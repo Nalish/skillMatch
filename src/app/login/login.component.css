@@ -1,0 +1,134 @@
+.login-container {
+    background: linear-gradient(to top, #530061, #000);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0d0d0d;
+    color: white;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .welcome-section h1 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  
+  .welcome-underline {
+    margin-top: 20px;
+    border: 1px dashed #444;
+    width: 50%;
+  }
+  
+  .login-card {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    border: 1px solid #444;
+    border-radius: 16px;
+    padding: 40px;
+    width: 350px;
+    box-shadow: 0 0 20px rgba(128, 0, 128, 0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .user-type-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #222;
+    padding: 5px;
+  }
+  
+  .user-type-toggle button {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .user-type-toggle .active {
+    background-color: white;
+    color: black;
+  }
+  
+  .login-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .login-subtitle {
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #888;
+    background-color: transparent;
+    color: white;
+  }
+  
+  .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(90deg, #4a90e2, #8e2de2);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #aaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .divider hr {
+    flex: 1;
+    border: none;
+    border-top: 1px solid #444;
+  }
+  
+  .divider span {
+    margin: 0 10px;
+  }
+  
+  
+  
+  .footer-text {
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .footer-text a {
+    color: #888;
+    text-decoration: none;
+    margin: 0 5px;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+  }
