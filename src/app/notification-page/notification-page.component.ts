@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 interface Notification {
@@ -13,6 +14,8 @@ interface Notification {
   styleUrl: './notification-page.component.css'
 })
 export class NotificationPageComponent {
+
+  constructor(private router:Router){}
   notifications: Notification[] = [
     {
       title: 'Interview with Innotech Software',
@@ -45,4 +48,19 @@ export class NotificationPageComponent {
       logo: 'assets/logos/globalsoft.png'
     }
   ];
+  navigateToCareerPath(){
+    {
+  this.router.navigate(['/career-path'])
+    }
+  }
+  navigateToChatBox(){
+    {
+  this.router.navigate(['/chat'])
+    }
+  }
+  navigateToNotifications(){
+    {
+  this.router.navigate(['/notifications'])
+    }
+  }
 }

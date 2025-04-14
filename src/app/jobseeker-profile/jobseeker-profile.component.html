@@ -7,7 +7,44 @@
 </div>
 <body>
   
-
+  <div class="sidebar">
+    <ul class="nav-list">
+      <li class="nav-item active">
+        <i class="icon">👜</i>
+        <span>Dashboard</span>
+      </li>
+      <li class="nav-item" (click)="navigateToCareerPath()">
+        <i class="icon">🛣️</i>
+        <span>Career Path</span>
+        <span class="arrow">›</span>
+      </li>
+      <li class="nav-item" (click)="navigateToChatBox()">
+        <i class="icon">🧠</i>
+        <span>Chat box</span>
+        <span class="arrow">›</span>
+      </li>
+      <li class="nav-item" (click)=" navigateToNotifications()">
+        <i class="icon">🔔</i>
+        <span>Notifications</span>
+        <span class="arrow">›</span>
+      </li>
+    </ul>
+  
+    <hr class="divider" />
+  
+    <ul class="nav-list bottom">
+      <li class="nav-item">
+        <i class="icon">⚙️</i>
+        <span>Settings</span>
+        <span class="arrow">›</span>
+      </li>
+      <li class="nav-item">
+        <i class="icon">🔓</i>
+        <span>Sign Out</span>
+        <span class="arrow">›</span>
+      </li>
+    </ul>
+  </div>
 <div class="container">
     <h1 class="heading">Welcome Jane,</h1>
     <p class="description">

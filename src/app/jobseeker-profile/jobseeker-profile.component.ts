@@ -52,5 +52,15 @@ export class JobseekerProfileComponent {
   this.router.navigate(['/career-path'])
     }
   }
+  navigateToChatBox(){
+    {
+  this.router.navigate(['/chat'])
+    }
+  }
+  navigateToNotifications(){
+    {
+  this.router.navigate(['/notifications'])
+    }
+  }
 }
 
