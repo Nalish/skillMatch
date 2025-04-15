@@ -1,0 +1,71 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Top Navbar */
+  .navbar {
+    background-color: #4b006e;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Layout */
+  .dashboard-layout {
+    display: flex;
+    height: calc(100vh - 72px); /* Full height minus navbar */
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #300040;
+    color: white;
+    padding: 2rem 1rem;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+  }
+  
+  .sidebar li {
+    margin: 1rem 0;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .sidebar li:hover {
+    background-color: #4b006e;
+  }
+  
+  /* Main Content */
+  .main-content {
+    flex: 1;
+    background-color: #f3f3f3;
+    padding: 2rem;
+  }
+  
+  .stats {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  
+  .card {
+    background-color: #6b007e;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  

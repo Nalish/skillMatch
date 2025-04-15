@@ -1,0 +1,34 @@
+<!-- Top Navbar -->
+<nav class="navbar">
+    <h1>JOBQuest</h1>
+  </nav>
+  
+  <!-- Dashboard Layout -->
+  <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li>Dashboard</li>
+        <li>Job Posting</li>
+        <li (click)="navigatetoJobOpenings()">Add Job Openings</li>
+        <li>Candidate Review</li>
+        <li>Scheduling</li>
+        <li>Chat Query</li>
+      </ul>
+    </aside>
+  
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="stats">
+        <div class="card">Posted Jobs: {{ postedJobs }}</div>
+        <div class="card">Applications: {{ applications }}</div>
+        <div class="card">Interviews: {{ interviews }}</div>
+        <div class="card">Hires: {{ hires }}</div>
+      </div>
+  
+      <div class="trends">
+        
+      </div>
+    </main>
+  </div>
+  

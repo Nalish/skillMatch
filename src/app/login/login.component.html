@@ -1,42 +1,41 @@
+<!-- login.component.html -->
 <div class="login-container">
-    <div class="welcome-section">
-      <h1>Welcome Back .!</h1>
-      <hr class="welcome-underline" />
+  <div class="welcome-section">
+    <h1>Welcome Back .!</h1>
+    <hr class="welcome-underline" />
+  </div>
+
+  <div class="login-card">
+    <!-- Role Toggle Buttons -->
+    <div class="user-type-toggle">
+      <button [class.active]="selectedRole === 'jobseeker'" (click)="setRole('jobseeker')">Job Seeker</button>
+      <button [class.active]="selectedRole === 'employer'" (click)="setRole('employer')">Employer</button>
     </div>
-  
-    <div class="login-card">
-      <div class="user-type-toggle">
-        <button class="active">Job Seeker</button>
-        <button>Employer</button>
-      </div>
-  
-      <h2 class="login-title">Login</h2>
-      <p class="login-subtitle">Glad you're back.!</p>
-  
-      <input type="text" placeholder="Username" class="input-field" />
-      <input type="password" placeholder="Password" class="input-field" />
-  
-      <div class="remember-forgot">
-        <label><input type="checkbox" /> Remember me</label>
-        <a href="#">Forgot password ?</a>
-      </div>
-  
-      <button class="login-btn" (click)="navigateToJobSeekerProfile()">Login</button>
-  
-      <div class="divider">
-        <hr /><span>Or</span><hr />
-      </div>
-  
-   
-  
-      <div class="footer-text">
-        <p>Don't have an account ? <a (click)="navigateToSignup()" [ngStyle]="{'cursor': 'pointer'}">Signup</a></p>
-        <div class="footer-links">
-          <a href="#">Terms & Conditions</a>
-          <a href="#">Support</a>
-          <a href="#">Customer Care</a>
-        </div>
+
+    <h2 class="login-title">Login</h2>
+    <p class="login-subtitle">Glad you're back.!</p>
+
+    <input type="text" placeholder="Username" [(ngModel)]="username" class="input-field" />
+    <input type="password" placeholder="Password" [(ngModel)]="password" class="input-field" />
+
+    <div class="remember-forgot">
+      <label><input type="checkbox" /> Remember me</label>
+      <a href="#">Forgot password ?</a>
+    </div>
+
+    <button class="login-btn" (click)="login()">Login</button>
+
+    <div class="divider">
+      <hr /><span>Or</span><hr />
+    </div>
+
+    <div class="footer-text">
+      <p>Don't have an account ? <a (click)="navigateToSignup()" [ngStyle]="{'cursor': 'pointer'}">Signup</a></p>
+      <div class="footer-links">
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Support</a>
+        <a href="#">Customer Care</a>
       </div>
     </div>
   </div>
-  
+</div>

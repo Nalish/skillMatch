@@ -9,6 +9,8 @@ import { JobseekerProfileComponent } from './jobseeker-profile/jobseeker-profile
 import { CareerPathComponent } from './career-path/career-path.component';
 import { ChatComponent } from './chat/chat.component';
 import { NotificationPageComponent } from './notification-page/notification-page.component';
+import { JobOpeningsComponent } from './job-openings/job-openings.component';
+import { DashboardEmployerComponent } from './dashboard-employer/dashboard-employer.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },//the default page
@@ -21,7 +23,10 @@ export const routes: Routes = [
     {path:'jobseeker-profile',component:JobseekerProfileComponent},
     {path:'career-path',component:CareerPathComponent},
     {path:'chat',component:ChatComponent},
-    {path:'notifications',component:NotificationPageComponent}
+    {path:'notifications',component:NotificationPageComponent},
+    {path:'job-openings',component:JobOpeningsComponent},
+    {path:'dashboard-employer',component:DashboardEmployerComponent},
+    {path:'job-application',component:JobApplicationsComponent},
 
 
 ];
