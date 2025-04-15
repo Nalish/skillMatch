@@ -1,51 +1,16 @@
 
 <div class="container">
-    <aside class="sidebar">
-      <div class="logo">JobSeekers</div>
-      <div class="profile-header">
-        <div class="profile-icon"></div>
-        <div class="welcome-back">WELCOME BACK</div>
-      </div>
-      <div class="menu">
-        <div class="menu-item active">
-          <div class="icon dashboard-icon"></div>
-          <p>Dashboard</p>
-          <div class="arrow-icon"></div>
-        </div>
-        <div class="menu-item">
-          <div class="icon job-postings-icon"></div>
-          <p>Job Postings</p>
-          <div class="arrow-icon"></div>
-        </div>
-        <div class="menu-item">
-          <div class="icon chat-icon"></div>
-          <p>Chat box</p>
-          <div class="arrow-icon"></div>
-        </div>
-        <div class="menu-item">
-          <div class="icon notifications-icon"></div>
-          <p>Notifications</p>
-          <div class="arrow-icon"></div>
-        </div>
-        <div class="menu-item">
-          <div class="icon candidates-icon"></div>
-          <p>Candidates</p>
-          <div class="arrow-icon"></div>
-        </div>
-      </div>
-      <div class="footer">
-        <div class="menu-item">
-          <div class="icon settings-icon"></div>
-          <p>Settings</p>
-          <div class="arrow-icon"></div>
-        </div>
-        <div class="menu-item">
-          <div class="icon signout-icon"></div>
-          <p>Sign Out</p>
-          <div class="arrow-icon"></div>
-        </div>
-      </div>
-    </aside>
+  <aside class="sidebar">
+    <ul>
+      <li>Dashboard</li>
+  
+      <li (click)="navigatetoJobOpenings()">Add Job Openings</li>
+      <li (click)="navigatetoViewCandidate()">Candidate Review</li>
+      <li (click)="navigatetoScheduleInterview()">Scheduling</li>
+      <li (click)="navigateToChatBox()">Chat Query</li>
+    </ul>
+  </aside>
+   
     <main class="content">
       <div class="profile-header">
         <div class="profile-image"></div>

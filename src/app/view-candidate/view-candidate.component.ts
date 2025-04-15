@@ -10,4 +10,18 @@ import { Router } from '@angular/router';
 })
 export class ViewCandidateComponent {
 constructor(private router:Router){}
+
+navigatetoJobOpenings(){
+  this.router.navigate(['./job-openings'])
+}
+navigatetoViewCandidate(){
+  this.router.navigate(['./view-candidate'])
+}
+navigatetoScheduleInterview(){
+  this.router.navigate(['./schedule-interview'])
+}
+navigateToChatBox(){
+   this.router.navigate(['/chat'])
+}
+
 }

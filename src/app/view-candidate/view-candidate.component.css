@@ -1,3 +1,26 @@
+ /* Sidebar */
+ .sidebar {
+  width: 220px;
+  background-color: #300040;
+  color: white;
+  padding: 2rem 1rem;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin: 1rem 0;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #4b006e;
+}
 .navbar {
   background-color: #4b006e; /* Deep purple */
   color: white;

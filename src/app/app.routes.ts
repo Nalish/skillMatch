@@ -11,6 +11,7 @@ import { ChatComponent } from './chat/chat.component';
 import { NotificationPageComponent } from './notification-page/notification-page.component';
 import { JobOpeningsComponent } from './job-openings/job-openings.component';
 import { DashboardEmployerComponent } from './dashboard-employer/dashboard-employer.component';
+import { ScheduleInterviewComponent } from './schedule-interview/schedule-interview.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },//the default page
@@ -27,7 +28,7 @@ export const routes: Routes = [
     {path:'job-openings',component:JobOpeningsComponent},
     {path:'dashboard-employer',component:DashboardEmployerComponent},
     {path:'job-application',component:JobApplicationsComponent},
-
+    {path:'schedule-interview',component:ScheduleInterviewComponent}
 
 ];
 
